@@ -49,4 +49,4 @@ MIT License
 ## Поддержка
 - Email: support@cms.example.com
 - Телефон: +7 (XXX) XXX-XX-XX
-- Чат: support.cms.example.com 
+- Чат: support.cms.example.com "# Solo-proect" 
