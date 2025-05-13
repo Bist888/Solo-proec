@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Удаление {{ content.title }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title text-danger mb-4">Подтверждение удаления</h1>
+                    
+                    <p class="lead">Вы действительно хотите удалить "{{ content.title }}"?</p>
+                    
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Это действие нельзя будет отменить.
+                    </div>
+
+                    <div class="content-preview mb-4">
+                        <h5>Предпросмотр контента:</h5>
+                        <div class="card">
+                            <div class="card-body">
+                                {% if content.image %}
+                                <img src="{{ content.image.url }}" alt="{{ content.title }}" 
+                                     class="img-thumbnail mb-3" style="max-height: 200px;">
+                                {% endif %}
+                                <h6>{{ content.title }}</h6>
+                                <p class="text-muted small">
+                                    Создан: {{ content.created_at|date:"d.m.Y H:i" }}<br>
+                                    Автор: {{ content.author.username }}
+                                </p>
+                                <p class="card-text">{{ content.description|truncatewords:50 }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form method="post" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fas fa-trash"></i> Подтвердить удаление
+                        </button>
+                        <a href="{% url 'content_detail' content.id %}" class="btn btn-secondary">
+                            <i class="fas fa-times"></i> Отмена
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

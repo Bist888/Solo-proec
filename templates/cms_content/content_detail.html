@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ content.title }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <nav aria-label="breadcrumb" class="mt-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url 'content_list' %}">Контент</a></li>
+                    <li class="breadcrumb-item active">{{ content.title }}</li>
+                </ol>
+            </nav>
+
+            <article class="content-detail">
+                <header class="mb-4">
+                    <h1 class="display-4">{{ content.title }}</h1>
+                    <div class="meta text-muted mb-4">
+                        <span class="author">Автор: {{ content.author.username }}</span> |
+                        <span class="date">{{ content.created_at|date:"d.m.Y H:i" }}</span> |
+                        <span class="status badge {% if content.status == 'published' %}bg-success{% else %}bg-warning{% endif %}">
+                            {{ content.get_status_display }}
+                        </span>
+                    </div>
+                </header>
+
+                {% if content.image %}
+                <div class="content-image mb-4">
+                    <img src="{{ content.image.url }}" alt="{{ content.title }}" class="img-fluid rounded">
+                </div>
+                {% endif %}
+
+                <div class="content-description lead mb-4">
+                    {{ content.description }}
+                </div>
+
+                <div class="content-body">
+                    {{ content.content|linebreaks }}
+                </div>
+
+                {% if user.is_authenticated and user == content.author %}
+                <div class="actions mt-4">
+                    <a href="{% url 'content_edit' content.id %}" class="btn btn-primary">
+                        <i class="fas fa-edit"></i> Редактировать
+                    </a>
+                    <a href="{% url 'content_delete' content.id %}" class="btn btn-danger">
+                        <i class="fas fa-trash"></i> Удалить
+                    </a>
+                </div>
+                {% endif %}
+            </article>
+        </div>
+    </div>
+</div>
+{% endblock %} 

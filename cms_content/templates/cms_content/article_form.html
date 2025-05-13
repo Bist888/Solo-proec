@@ -1,0 +1,36 @@
+{% extends 'cms_content/base.html' %}
+
+{% block title %}{% if form.instance.pk %}Edit Article{% else %}Create Article{% endif %}{% endblock %}
+
+{% block content %}
+    <div class="form-container">
+        <h2>{% if form.instance.pk %}Edit Article{% else %}Create Article{% endif %}</h2>
+        
+        <form method="post" class="article-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-actions">
+                <button type="submit" class="btn">Save</button>
+                <a href="{% url 'article_list' %}" class="btn">Cancel</a>
+            </div>
+        </form>
+    </div>
+
+    <style>
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .article-form {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .form-actions {
+            margin-top: 1rem;
+        }
+        .form-actions .btn {
+            margin-right: 1rem;
+        }
+    </style>
+{% endblock %} 

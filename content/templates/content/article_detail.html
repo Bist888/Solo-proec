@@ -1,0 +1,15 @@
+{% extends 'content/base.html' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.content }}</p>
+    <p>Created: {{ article.created_at }}</p>
+    <p>Updated: {{ article.updated_at }}</p>
+    {% if user.is_authenticated %}
+        <a href="{% url 'article_edit' pk=article.pk %}">Edit</a>
+        <a href="{% url 'article_delete' pk=article.pk %}">Delete</a>
+    {% endif %}
+    <a href="{% url 'article_list' %}">Back to Articles</a>
+{% endblock %} 
