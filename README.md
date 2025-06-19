@@ -29,11 +29,11 @@
    ```
 
 ## Документация
-- [User Guide](docs/user_guide.md)
-- [Архитектура](docs/architecture.md)
-- [API](docs/api.md)
-- [Тестирование](docs/testing.md)
-- [Brand Book](brandbook.md)
+- [User Guide](https://github.com/Bist888/Solo-proec/wiki/User-Guide)
+- [Архитектура]([docs/architecture.md](https://github.com/Bist888/Solo-proec/wiki/Архитектура))
+- [API]([docs/api.md](https://github.com/Bist888/Solo-proec/wiki/API))
+- [Тестирование]([docs/testing.md](https://github.com/Bist888/Solo-proec/wiki/Тестирование))
+- [Brand Book]([brandbook.md](https://github.com/Bist888/Solo-proec/wiki/Brand-Book))
 
 ## Лицензия
 MIT
