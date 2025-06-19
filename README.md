@@ -30,10 +30,10 @@
 
 ## Документация
 - [User Guide](https://github.com/Bist888/Solo-proec/wiki/User-Guide)
-- [Архитектура](https://github.com/Bist888/Solo-proec/wiki/Архитектура](https://github.com/Bist888/Solo-proec/wiki/Архитектура))
-- [API]([docs/api.md](https://github.com/Bist888/Solo-proec/wiki/API))
-- [Тестирование]([docs/testing.md](https://github.com/Bist888/Solo-proec/wiki/Тестирование))
-- [Brand Book]([brandbook.md](https://github.com/Bist888/Solo-proec/wiki/Brand-Book))
+- [Архитектура]([https://github.com/Bist888/Solo-proec/wiki/Архитектура](https://github.com/Bist888/Solo-proec/wiki/Архитектура)](https://github.com/Bist888/Solo-proec/wiki/Архитектура )
+- [API](docs/api.md](https://github.com/Bist888/Solo-proec/wiki/API)](https://github.com/Bist888/Solo-proec/wiki/API )
+- [Тестирование](https://github.com/Bist888/Solo-proec/wiki/Тестирование)
+- [Brand Book](https://github.com/Bist888/Solo-proec/wiki/Brand-Book)
 
 ## Лицензия
 MIT
