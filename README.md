@@ -69,11 +69,12 @@
 
 ## Документация
 
-- [Архитектура](docs/architecture.md)
-- [Руководство пользователя](docs/user_guide.md)
-- [Тестирование](docs/testing.md)
-- [API](docs/api.md)
-- [Brand Book](docs/brandbook.md)
+- [User Guide](https://github.com/Bist888/Solo-proec/wiki/User-Guide)
+- [Архитектура](https://github.com/Bist888/Solo-proec/wiki/Архитектура)
+- [API](https://github.com/Bist888/Solo-proec/wiki/API)
+- [Тестирование](https://github.com/Bist888/Solo-proec/wiki/Тестирование)
+- [Brand Book](https://github.com/Bist888/Solo-proec/wiki/Brand-Book)
+
 
 *или используйте [Wiki](https://github.com/Bist888/Solo-proec/wiki) для подробной документации.*
 
