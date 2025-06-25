@@ -45,6 +45,8 @@ CMS - это standalone приложение для управления кон�
 
 4. Запустите сервер:
    ```
+python manage.py runserver
+   
 
 # CMS - Система управления контентом
 
@@ -92,20 +94,6 @@ CMS - это standalone приложение для управления кон�
 - [API](https://github.com/Bist888/Solo-proec/wiki/API)
 - [Тестирование](https://github.com/Bist888/Solo-proec/wiki/Тестирование)
 - [Brand Book](https://github.com/Bist888/Solo-proec/wiki/Brand-Book)
- 52a947c (Добавил все необходимые файлы и тесты для проекта)
- 
-
-## Лицензия
-MIT License
-
-HEAD
-## Поддержка
-- Email: support@cms.example.com
-- Телефон: +7 (XXX) XXX-XX-XX
-- Чат: support.cms.example.com "# Solo-proect" 
-
-
-
 
 ## Лицензия
 MIT License
